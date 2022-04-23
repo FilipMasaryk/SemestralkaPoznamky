@@ -1,7 +1,8 @@
-package sk.uniza.semestralkapoznamky
+package sk.uniza.semestralkapoznamky.view
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import sk.uniza.semestralkapoznamky.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

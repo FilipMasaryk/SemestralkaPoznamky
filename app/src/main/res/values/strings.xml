@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">SemestralkaPoznamky</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="addnote">addNote</string>
+    <string name="no_notes">Zatiaľ nemáte žiadne poznámky</string>
+    <string name="nazov_poznamky">Názov</string>
+    <string name="popis_poznamky">Poznámka</string>
+    <string name="save_note">savenote</string>
 </resources>
