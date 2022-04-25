@@ -9,5 +9,14 @@
         android:id="@+id/listOfNotesFragment"
         android:name="sk.uniza.semestralkapoznamky.view.fragment.ListOfNotesFragment"
         android:label="fragment_list_of_notes"
-        tools:layout="@layout/fragment_list_of_notes" />
+        tools:layout="@layout/fragment_list_of_notes" >
+        <action
+            android:id="@+id/action_listOfNotesFragment_to_noteEditorFragment"
+            app:destination="@id/noteEditorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteEditorFragment"
+        android:name="sk.uniza.semestralkapoznamky.view.fragment.NoteEditorFragment"
+        android:label="fragment_note_editor"
+        tools:layout="@layout/fragment_note_editor" />
 </navigation>

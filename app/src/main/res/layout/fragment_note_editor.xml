@@ -6,43 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".view.fragment.NoteEditorFragment">
 
+<!--    <ImageButton-->
+<!--        android:id="@+id/toggle_pin"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--        android:src="@drawable/ic_baseline_push_pin_24"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_save"
+        android:id="@+id/fab_add"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_gravity="end|bottom"
         android:layout_margin="25dp"
-        android:backgroundTint="@color/teal_700"
+        android:backgroundTint="?colorPrimary"
         android:contentDescription="@string/save_note"
         android:src="@drawable/ic_baseline_library_add_check_24"
+        app:tint="?colorOnPrimary"
         app:fabCustomSize="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:maxImageSize="30dp" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/nazov_poznamky"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="13dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
         android:hint="@string/nazov_poznamky"
-        android:importantForAutofill="no"
-        android:inputType="text"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.115" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <EditText
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/popis_poznamky"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="13dp"
         android:hint="@string/popis_poznamky"
-        android:importantForAutofill="no"
-        android:inputType="text"
-        android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@+id/nazov_poznamky" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nazov_poznamky">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
