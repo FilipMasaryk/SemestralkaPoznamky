@@ -3,13 +3,19 @@ package sk.uniza.semestralkapoznamky.view.fragment
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import androidx.navigation.findNavController
+import dagger.hilt.android.AndroidEntryPoint
 import sk.uniza.semestralkapoznamky.R
+import sk.uniza.semestralkapoznamky.data.Note
 import sk.uniza.semestralkapoznamky.databinding.FragmentNoteEditorBinding
-
+import sk.uniza.semestralkapoznamky.viewmodel.NoteEditorModel
+import sk.uniza.semestralkapoznamky.viewmodel.NoteViewModel
+@AndroidEntryPoint
 class NoteEditorFragment : Fragment() {
 
     private lateinit var binding: FragmentNoteEditorBinding
-//    TODO move to viewmodel
+    private val noteEditorModel: NoteEditorModel by viewModels()
     private var pinChecked = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +29,12 @@ class NoteEditorFragment : Fragment() {
     ): View {
         // Inflate the layout for this fragment
         binding = FragmentNoteEditorBinding.inflate(inflater)
+        binding.fabAdd.setOnClickListener {
+            val name = binding.nazovPoznamky.text.toString()
+            val description = binding.popisPoznamky.text.toString()
+            noteEditorModel.insert(Note(name,description))
+            it.findNavController().navigate(R.id.action_noteEditorFragment_to_note_to_note_listOfNotesFragment)
+        }
         return binding.root
     }
 

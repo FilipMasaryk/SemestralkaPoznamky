@@ -18,5 +18,9 @@
         android:id="@+id/noteEditorFragment"
         android:name="sk.uniza.semestralkapoznamky.view.fragment.NoteEditorFragment"
         android:label="fragment_note_editor"
-        tools:layout="@layout/fragment_note_editor" />
+        tools:layout="@layout/fragment_note_editor" >
+    <action
+        android:id="@+id/action_noteEditorFragment_to_note_to_note_listOfNotesFragment"
+        app:destination="@id/listOfNotesFragment" />
+    </fragment>
 </navigation>
