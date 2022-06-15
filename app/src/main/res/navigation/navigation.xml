@@ -22,5 +22,9 @@
     <action
         android:id="@+id/action_noteEditorFragment_to_note_to_note_listOfNotesFragment"
         app:destination="@id/listOfNotesFragment" />
+        <argument
+            android:name="note_id"
+            app:argType="integer"
+            android:defaultValue="-1" />
     </fragment>
 </navigation>

@@ -19,57 +19,102 @@ class ListOfNotesFragment : Fragment() {
 
     private lateinit var binding: FragmentListOfNotesBinding
     private val noteViewModel: NoteViewModel by viewModels()
+    private lateinit var searchBar: SearchView
 
+    /**
+     * Povoli horne menu
+     * @param savedInstanceState
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setHasOptionsMenu(true)
+        setHasOptionsMenu(true) //povoli horne menu
     }
 
+    /**
+     * Inflatne fragment_list_of_notes.xml a po kliknuti na floating action button
+     * sa zobrazi fragment na pridanie novej poznamky
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return
+     */
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        // Inflate the layout for this fragment
         binding = FragmentListOfNotesBinding.inflate(inflater)
         binding.fabAdd.setOnClickListener {
-            it.findNavController().navigate(R.id.action_listOfNotesFragment_to_noteEditorFragment)
+            val action =
+                ListOfNotesFragmentDirections.actionListOfNotesFragmentToNoteEditorFragment()
+            it.findNavController().navigate(action)
         }
         return binding.root
     }
 
+    /**
+     * Inflatne horne menu a nastavi funkcnost search baru
+     *
+     * @param menu
+     * @param inflater
+     */
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.options_menu, menu)
-        val searchItem = menu.findItem(R.id.action_search).actionView as SearchView
-        searchItem.queryHint = getString(R.string.search)
-        searchItem.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
-            override fun onQueryTextSubmit(p0: String): Boolean {
-                return false
-            }
-
-            override fun onQueryTextChange(p0: String): Boolean {
+        val menuItem = menu.findItem(R.id.action_search)
+        searchBar = menuItem.actionView as SearchView
+        searchBar.queryHint = getString(R.string.search)
+        if (noteViewModel.searchText.isNotBlank()) {
+            menuItem.expandActionView()
+            searchBar.setQuery(noteViewModel.searchText, true)
+        }
+        searchBar.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
                 return true
             }
 
+            override fun onQueryTextChange(query: String?): Boolean {
+                if (query != null) {
+                    noteViewModel.searchText = query
+                    noteViewModel.setSearchFilter(query)
+                }
+                return true
+            }
         })
     }
 
+    /**
+     * Zobrazi poznamky a pokial je list poznamok prazdny tak zobrazi obrazok s textom
+     * "Zatial nemate ziadne poznamky"
+     *
+     * @param view
+     * @param savedInstanceState
+     */
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val adapter = NoteListAdapter()
         binding.recyclerView.adapter = adapter
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
-        noteViewModel.allNotes.observe(viewLifecycleOwner) {
+        noteViewModel.allNotesFiltered.observe(viewLifecycleOwner) {
             adapter.submitList(it)
             showNoNotesImage(it.isEmpty())
         }
     }
 
+    /**
+     * Nastavi hlavny titulok na "Poznámky"
+     *
+     */
     override fun onResume() {
         super.onResume()
         (requireActivity() as MainActivity).supportActionBar?.title = getString(R.string.notes)
     }
 
+    /**
+     * Pokial je parameter isEmpty true tak nastavi recyclerView na invisible a noNotesWrapper na visible
+     * Pokial nie je parameter isEmpty true tak nastavi recyclerView na visible a noNotesWrapper na invisible
+     *
+     * @param isEmpty
+     */
     private fun showNoNotesImage(isEmpty: Boolean) {
         if (isEmpty) {
             binding.noNotesWrapper.visibility = View.VISIBLE
@@ -78,8 +123,5 @@ class ListOfNotesFragment : Fragment() {
             binding.noNotesWrapper.visibility = View.INVISIBLE
             binding.recyclerView.visibility = View.VISIBLE
         }
-
     }
-
-
 }

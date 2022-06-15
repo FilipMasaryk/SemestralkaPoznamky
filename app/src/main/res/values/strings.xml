@@ -10,4 +10,6 @@
     <string name="search">Hľadať</string>
     <string name="action_pin">Pin</string>
     <string name="action_notification">Notification</string>
+    <string name="action_delete">Delete</string>
+    <string name="vymazanie_poznamky">Naozaj chceš vymazať túto poznámku?</string>
 </resources>

@@ -12,6 +12,11 @@ import sk.uniza.semestralkapoznamky.data.NoteRepository
 import sk.uniza.semestralkapoznamky.data.NoteRoomDatabase
 import javax.inject.Singleton
 
+/**
+ * Modul, ktory ma definovane ako vytvarat instancie jednotlivych tried(dependencies)
+ * Tieto instancie su vytvarane ako singleton
+ *
+ */
 @Module
 @InstallIn(SingletonComponent::class)
 class AppModule {
@@ -28,7 +33,7 @@ class AppModule {
     @Provides
     fun provideNoteDao(
         noteRoomDatabase: NoteRoomDatabase
-    ):NoteDao{
+    ): NoteDao {
         return noteRoomDatabase.noteDao()
     }
 
@@ -36,7 +41,7 @@ class AppModule {
     @Provides
     fun provideDatabase(
         @ApplicationContext app: Context
-    ):NoteRoomDatabase{
+    ): NoteRoomDatabase {
         return Room.databaseBuilder(
             app,
             NoteRoomDatabase::class.java,
