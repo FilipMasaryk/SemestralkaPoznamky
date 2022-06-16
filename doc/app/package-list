@@ -1,0 +1,84 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:sk.uniza.semestralkapoznamky.data////PointingToDeclaration/app/sk.uniza.semestralkapoznamky.data/index.html
+$dokka.location:sk.uniza.semestralkapoznamky.data/Note///PointingToDeclaration/app/sk.uniza.semestralkapoznamky.data/-note/index.html
+$dokka.location:sk.uniza.semestralkapoznamky.data/Note/Note/#kotlin.String#kotlin.String#kotlin.Boolean#kotlin.Int/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.data/-note/-note.html
+$dokka.location:sk.uniza.semestralkapoznamky.data/Note/description/#/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.data/-note/description.html
+$dokka.location:sk.uniza.semestralkapoznamky.data/Note/id/#/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.data/-note/id.html
+$dokka.location:sk.uniza.semestralkapoznamky.data/Note/name/#/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.data/-note/name.html
+$dokka.location:sk.uniza.semestralkapoznamky.data/Note/pinned/#/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.data/-note/pinned.html
+$dokka.location:sk.uniza.semestralkapoznamky.data/NoteDao///PointingToDeclaration/app/sk.uniza.semestralkapoznamky.data/-note-dao/index.html
+$dokka.location:sk.uniza.semestralkapoznamky.data/NoteDao/delete/#kotlin.Int/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.data/-note-dao/delete.html
+$dokka.location:sk.uniza.semestralkapoznamky.data/NoteDao/deleteAll/#/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.data/-note-dao/delete-all.html
+$dokka.location:sk.uniza.semestralkapoznamky.data/NoteDao/getSelectedNote/#kotlin.Int/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.data/-note-dao/get-selected-note.html
+$dokka.location:sk.uniza.semestralkapoznamky.data/NoteDao/insert/#sk.uniza.semestralkapoznamky.data.Note/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.data/-note-dao/insert.html
+$dokka.location:sk.uniza.semestralkapoznamky.data/NoteDao/searchDatabase/#kotlin.String/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.data/-note-dao/search-database.html
+$dokka.location:sk.uniza.semestralkapoznamky.data/NoteDao/update/#sk.uniza.semestralkapoznamky.data.Note/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.data/-note-dao/update.html
+$dokka.location:sk.uniza.semestralkapoznamky.data/NoteRepository///PointingToDeclaration/app/sk.uniza.semestralkapoznamky.data/-note-repository/index.html
+$dokka.location:sk.uniza.semestralkapoznamky.data/NoteRepository/NoteRepository/#sk.uniza.semestralkapoznamky.data.NoteDao/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.data/-note-repository/-note-repository.html
+$dokka.location:sk.uniza.semestralkapoznamky.data/NoteRepository/delete/#kotlin.Int/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.data/-note-repository/delete.html
+$dokka.location:sk.uniza.semestralkapoznamky.data/NoteRepository/getSelectedNote/#kotlin.Int/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.data/-note-repository/get-selected-note.html
+$dokka.location:sk.uniza.semestralkapoznamky.data/NoteRepository/insert/#sk.uniza.semestralkapoznamky.data.Note/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.data/-note-repository/insert.html
+$dokka.location:sk.uniza.semestralkapoznamky.data/NoteRepository/searchDatabase/#kotlin.String/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.data/-note-repository/search-database.html
+$dokka.location:sk.uniza.semestralkapoznamky.data/NoteRepository/update/#sk.uniza.semestralkapoznamky.data.Note/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.data/-note-repository/update.html
+$dokka.location:sk.uniza.semestralkapoznamky.data/NoteRoomDatabase///PointingToDeclaration/app/sk.uniza.semestralkapoznamky.data/-note-room-database/index.html
+$dokka.location:sk.uniza.semestralkapoznamky.data/NoteRoomDatabase/NoteRoomDatabase/#/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.data/-note-room-database/-note-room-database.html
+$dokka.location:sk.uniza.semestralkapoznamky.data/NoteRoomDatabase/noteDao/#/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.data/-note-room-database/note-dao.html
+$dokka.location:sk.uniza.semestralkapoznamky.view.adapter////PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view.adapter/index.html
+$dokka.location:sk.uniza.semestralkapoznamky.view.adapter/NoteListAdapter.NoteViewHolder///PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view.adapter/-note-list-adapter/-note-view-holder/index.html
+$dokka.location:sk.uniza.semestralkapoznamky.view.adapter/NoteListAdapter.NoteViewHolder/NoteViewHolder/#RecyclerviewNoteItemBinding/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view.adapter/-note-list-adapter/-note-view-holder/-note-view-holder.html
+$dokka.location:sk.uniza.semestralkapoznamky.view.adapter/NoteListAdapter.NoteViewHolder/bind/#kotlin.String#kotlin.String#kotlin.Int#kotlin.Boolean/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view.adapter/-note-list-adapter/-note-view-holder/bind.html
+$dokka.location:sk.uniza.semestralkapoznamky.view.adapter/NoteListAdapter.WordsComparator///PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view.adapter/-note-list-adapter/-words-comparator/index.html
+$dokka.location:sk.uniza.semestralkapoznamky.view.adapter/NoteListAdapter.WordsComparator/WordsComparator/#/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view.adapter/-note-list-adapter/-words-comparator/-words-comparator.html
+$dokka.location:sk.uniza.semestralkapoznamky.view.adapter/NoteListAdapter.WordsComparator/areContentsTheSame/#sk.uniza.semestralkapoznamky.data.Note#sk.uniza.semestralkapoznamky.data.Note/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view.adapter/-note-list-adapter/-words-comparator/are-contents-the-same.html
+$dokka.location:sk.uniza.semestralkapoznamky.view.adapter/NoteListAdapter.WordsComparator/areItemsTheSame/#sk.uniza.semestralkapoznamky.data.Note#sk.uniza.semestralkapoznamky.data.Note/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view.adapter/-note-list-adapter/-words-comparator/are-items-the-same.html
+$dokka.location:sk.uniza.semestralkapoznamky.view.adapter/NoteListAdapter///PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view.adapter/-note-list-adapter/index.html
+$dokka.location:sk.uniza.semestralkapoznamky.view.adapter/NoteListAdapter/NoteListAdapter/#/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view.adapter/-note-list-adapter/-note-list-adapter.html
+$dokka.location:sk.uniza.semestralkapoznamky.view.adapter/NoteListAdapter/onBindViewHolder/#sk.uniza.semestralkapoznamky.view.adapter.NoteListAdapter.NoteViewHolder#kotlin.Int/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view.adapter/-note-list-adapter/on-bind-view-holder.html
+$dokka.location:sk.uniza.semestralkapoznamky.view.adapter/NoteListAdapter/onCreateViewHolder/#android.view.ViewGroup#kotlin.Int/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view.adapter/-note-list-adapter/on-create-view-holder.html
+$dokka.location:sk.uniza.semestralkapoznamky.view.fragment////PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view.fragment/index.html
+$dokka.location:sk.uniza.semestralkapoznamky.view.fragment/ListOfNotesFragment///PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view.fragment/-list-of-notes-fragment/index.html
+$dokka.location:sk.uniza.semestralkapoznamky.view.fragment/ListOfNotesFragment/ListOfNotesFragment/#/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view.fragment/-list-of-notes-fragment/-list-of-notes-fragment.html
+$dokka.location:sk.uniza.semestralkapoznamky.view.fragment/ListOfNotesFragment/onCreate/#android.os.Bundle?/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view.fragment/-list-of-notes-fragment/on-create.html
+$dokka.location:sk.uniza.semestralkapoznamky.view.fragment/ListOfNotesFragment/onCreateOptionsMenu/#android.view.Menu#android.view.MenuInflater/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view.fragment/-list-of-notes-fragment/on-create-options-menu.html
+$dokka.location:sk.uniza.semestralkapoznamky.view.fragment/ListOfNotesFragment/onCreateView/#android.view.LayoutInflater#android.view.ViewGroup?#android.os.Bundle?/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view.fragment/-list-of-notes-fragment/on-create-view.html
+$dokka.location:sk.uniza.semestralkapoznamky.view.fragment/ListOfNotesFragment/onResume/#/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view.fragment/-list-of-notes-fragment/on-resume.html
+$dokka.location:sk.uniza.semestralkapoznamky.view.fragment/ListOfNotesFragment/onViewCreated/#android.view.View#android.os.Bundle?/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view.fragment/-list-of-notes-fragment/on-view-created.html
+$dokka.location:sk.uniza.semestralkapoznamky.view.fragment/NoteEditorFragment///PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view.fragment/-note-editor-fragment/index.html
+$dokka.location:sk.uniza.semestralkapoznamky.view.fragment/NoteEditorFragment/NoteEditorFragment/#/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view.fragment/-note-editor-fragment/-note-editor-fragment.html
+$dokka.location:sk.uniza.semestralkapoznamky.view.fragment/NoteEditorFragment/onCreate/#android.os.Bundle?/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view.fragment/-note-editor-fragment/on-create.html
+$dokka.location:sk.uniza.semestralkapoznamky.view.fragment/NoteEditorFragment/onCreateOptionsMenu/#android.view.Menu#android.view.MenuInflater/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view.fragment/-note-editor-fragment/on-create-options-menu.html
+$dokka.location:sk.uniza.semestralkapoznamky.view.fragment/NoteEditorFragment/onCreateView/#android.view.LayoutInflater#android.view.ViewGroup?#android.os.Bundle?/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view.fragment/-note-editor-fragment/on-create-view.html
+$dokka.location:sk.uniza.semestralkapoznamky.view.fragment/NoteEditorFragment/onOptionsItemSelected/#android.view.MenuItem/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view.fragment/-note-editor-fragment/on-options-item-selected.html
+$dokka.location:sk.uniza.semestralkapoznamky.view.fragment/NoteEditorFragment/onViewCreated/#android.view.View#android.os.Bundle?/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view.fragment/-note-editor-fragment/on-view-created.html
+$dokka.location:sk.uniza.semestralkapoznamky.view////PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view/index.html
+$dokka.location:sk.uniza.semestralkapoznamky.view/MainActivity///PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view/-main-activity/index.html
+$dokka.location:sk.uniza.semestralkapoznamky.view/MainActivity/MainActivity/#/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.view/-main-activity/-main-activity.html
+$dokka.location:sk.uniza.semestralkapoznamky.viewmodel////PointingToDeclaration/app/sk.uniza.semestralkapoznamky.viewmodel/index.html
+$dokka.location:sk.uniza.semestralkapoznamky.viewmodel/NoteEditorModel///PointingToDeclaration/app/sk.uniza.semestralkapoznamky.viewmodel/-note-editor-model/index.html
+$dokka.location:sk.uniza.semestralkapoznamky.viewmodel/NoteEditorModel/NoteEditorModel/#sk.uniza.semestralkapoznamky.data.NoteRepository/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.viewmodel/-note-editor-model/-note-editor-model.html
+$dokka.location:sk.uniza.semestralkapoznamky.viewmodel/NoteEditorModel/delete/#kotlin.Int/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.viewmodel/-note-editor-model/delete.html
+$dokka.location:sk.uniza.semestralkapoznamky.viewmodel/NoteEditorModel/getSelectedNote/#kotlin.Int/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.viewmodel/-note-editor-model/get-selected-note.html
+$dokka.location:sk.uniza.semestralkapoznamky.viewmodel/NoteEditorModel/insert/#sk.uniza.semestralkapoznamky.data.Note/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.viewmodel/-note-editor-model/insert.html
+$dokka.location:sk.uniza.semestralkapoznamky.viewmodel/NoteEditorModel/pinChecked/#/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.viewmodel/-note-editor-model/pin-checked.html
+$dokka.location:sk.uniza.semestralkapoznamky.viewmodel/NoteEditorModel/update/#sk.uniza.semestralkapoznamky.data.Note/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.viewmodel/-note-editor-model/update.html
+$dokka.location:sk.uniza.semestralkapoznamky.viewmodel/NoteViewModel///PointingToDeclaration/app/sk.uniza.semestralkapoznamky.viewmodel/-note-view-model/index.html
+$dokka.location:sk.uniza.semestralkapoznamky.viewmodel/NoteViewModel/NoteViewModel/#sk.uniza.semestralkapoznamky.data.NoteRepository/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.viewmodel/-note-view-model/-note-view-model.html
+$dokka.location:sk.uniza.semestralkapoznamky.viewmodel/NoteViewModel/allNotesFiltered/#/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.viewmodel/-note-view-model/all-notes-filtered.html
+$dokka.location:sk.uniza.semestralkapoznamky.viewmodel/NoteViewModel/searchText/#/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.viewmodel/-note-view-model/search-text.html
+$dokka.location:sk.uniza.semestralkapoznamky.viewmodel/NoteViewModel/setSearchFilter/#kotlin.String/PointingToDeclaration/app/sk.uniza.semestralkapoznamky.viewmodel/-note-view-model/set-search-filter.html
+$dokka.location:sk.uniza.semestralkapoznamky////PointingToDeclaration/app/sk.uniza.semestralkapoznamky/index.html
+$dokka.location:sk.uniza.semestralkapoznamky/AppModule///PointingToDeclaration/app/sk.uniza.semestralkapoznamky/-app-module/index.html
+$dokka.location:sk.uniza.semestralkapoznamky/AppModule/AppModule/#/PointingToDeclaration/app/sk.uniza.semestralkapoznamky/-app-module/-app-module.html
+$dokka.location:sk.uniza.semestralkapoznamky/AppModule/provideDatabase/#android.content.Context/PointingToDeclaration/app/sk.uniza.semestralkapoznamky/-app-module/provide-database.html
+$dokka.location:sk.uniza.semestralkapoznamky/AppModule/provideNoteDao/#sk.uniza.semestralkapoznamky.data.NoteRoomDatabase/PointingToDeclaration/app/sk.uniza.semestralkapoznamky/-app-module/provide-note-dao.html
+$dokka.location:sk.uniza.semestralkapoznamky/AppModule/provideNoteRepository/#sk.uniza.semestralkapoznamky.data.NoteDao/PointingToDeclaration/app/sk.uniza.semestralkapoznamky/-app-module/provide-note-repository.html
+$dokka.location:sk.uniza.semestralkapoznamky/NotesApplication///PointingToDeclaration/app/sk.uniza.semestralkapoznamky/-notes-application/index.html
+$dokka.location:sk.uniza.semestralkapoznamky/NotesApplication/NotesApplication/#/PointingToDeclaration/app/sk.uniza.semestralkapoznamky/-notes-application/-notes-application.html
+sk.uniza.semestralkapoznamky
+sk.uniza.semestralkapoznamky.data
+sk.uniza.semestralkapoznamky.view
+sk.uniza.semestralkapoznamky.view.adapter
+sk.uniza.semestralkapoznamky.view.fragment
+sk.uniza.semestralkapoznamky.viewmodel
+
